@@ -4,6 +4,12 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 require('dotenv').config();
 
+
+app.get("/api", (req, res) => {
+   res.send("welcome") 
+})
+
+
 app.get('/ogdata', async (req, res) => {
  
     const id = "1234"
